@@ -31,12 +31,12 @@
                 <h2>Blog</h2>
             </a>
         </li>
-        <li class="icon-box">
+        {{-- <li class="icon-box">
             <i class="fa fa-user"></i>
             <a href="{{url('login')}}">
                 <h2>Login</h2>
             </a>
-        </li>
+        </li> --}}
     </ul>
     <!-- Fixed Navigation Ends -->
     <!-- Mobile Menu Starts -->
@@ -52,10 +52,6 @@
                 <li><a href="{{url('protfolio')}}"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
                 <li><a href="{{url('contact')}}"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li><a href="{{url('blog')}}"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-                <li>
-                    <a href="{{url('login')}}"><i class="fa fa-user">
-                    </i><span>Login</span></a>
-                </li>
             </ul>
         </div>
     </nav>

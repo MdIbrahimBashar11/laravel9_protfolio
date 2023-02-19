@@ -1,8 +1,8 @@
-<script src="{{ asset('js/app.js') }}" defer></script>
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<script src="{{ asset('js/app.js') }}" defer ></script>
+<link href="{{ asset('css/app.css') }}" rel="stylesheet" >
 
 <x-guest-layout>
-
+  
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">

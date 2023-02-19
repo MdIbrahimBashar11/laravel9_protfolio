@@ -23,7 +23,7 @@
             <nav>
               <h1><a href="">MD IBRAHIM</a></h1>
               <ul>
-                <li><a href="{{ url('/admin') }}"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="{{ url('/redirect') }}"><i class="fa fa-home"></i>Home</a></li>
                   <li><a href="{{ url('/add') }}"><i class="fa fa-briefcase"></i> Add Post</a></li>
                   <li><a href="{{ url('/myPost') }}"><i class="fa fa-folder-open"></i> My Post</a></li>
                   <li><a href="{{ url('/') }}"><i class="fa fa-youtube"></i> Logout</a></li>
@@ -33,14 +33,7 @@
           </div>
           <div class="col-md-9 right">
             <div class="container">
-              @if (session()->has('message'))
-              <div class="alert alert-success">
-                  <button type="button" class="close" data-dismiss="alert"
-                  aria-hidden="true" class="btn btn-outline-info" >X</button>
-                  {{session()->get('message')}}
-              </div>
-                  
-              @endif
+
                 <div class="row">
                   <div class="col-md-12">
                     <table>

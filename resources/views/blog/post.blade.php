@@ -32,21 +32,9 @@
 
 
 
-         <ul class="pagination">
-            <!-- Previous Page Link -->
-            @if ($posts->onFirstPage())
-                <li class="disabled"><span>&laquo;</span></li>
-            @else
-                <li><a class="prev" href="{{ $posts->previousPageUrl() }}" rel="prev">&laquo;</a></li>
-            @endif
-        
-            <!-- Next Page Link -->
-            @if ($posts->hasMorePages())
-                <li><a class="next" href="{{ $posts->nextPageUrl() }}" rel="next">&raquo;</a></li>
-            @else
-                <li class="disabled"><span>&raquo;</span></li>
-            @endif
-        </ul>
+         <div class="text-center" style="width:100%;">
+            {{$posts->links('pagination::bootstrap-4')}}
+        </div>
         </div>
         <!-- Articles Ends -->
     </div>   

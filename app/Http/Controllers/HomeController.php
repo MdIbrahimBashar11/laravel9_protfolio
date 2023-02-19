@@ -6,16 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\VisitorModel;
 use App\Models\APost;
 use App\Models\Message;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
   public function redirect(){
     $usertype = Auth::User()->usertype;
     if($usertype == '1') {
-      return view('Layout.index');
+      return view('admin.index');
     } else {
         $product = Product::paginate(9);
-         return view('Layout.app');
+         return view('home');
     }
 }
   //VIEW
@@ -40,7 +42,7 @@ class HomeController extends Controller
         return view('blog.post_details', compact('post'));
     }
 
-    public function message(Request $req){
+    public function messagesend(Request $req){
         $mesg = new Message;
         $mesg->name = $req->name;
         $mesg->email = $req->email;

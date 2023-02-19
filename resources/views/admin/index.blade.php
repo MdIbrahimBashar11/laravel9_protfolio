@@ -26,7 +26,18 @@
                   <li><a href="{{ url('add') }}"><i class="fa fa-briefcase"></i> Add Post</a></li>
                   <li><a href="{{ url('/myPost') }}"><i class="fa fa-folder-open"></i> My Post</a></li>
                   <li><a href="{{ url('/message') }}"><i class="fa fa-comments"></i> Message</a></li>
-                  <li><a href="{{ url('/') }}"><i class="fa fa-youtube"></i> Logout</a></li>
+                  <li class="nav-item">
+                     <b>    <form method="POST" action="{{ route('logout') }}">
+                      @csrf
+    
+                      <x-dropdown-link :href="route('logout')" 
+                      onclick="return confirm('You are Suru Log Out')"
+                              onclick="event.preventDefault();
+                                          this.closest('form').submit();">
+                          {{ __('Log Out') }}
+                      </x-dropdown-link>
+                  </form></b>
+                </li>
 
               </ul>
             </nav>
@@ -34,7 +45,7 @@
           <div class="col-md-9 right">
             <div class="container">
                 <div class="row">
-                    <h1 class="py-3 m-4 text-center">Deshbord</h1>
+                    <h1 class="py-3 m-4 text-center">Dashbord</h1>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">

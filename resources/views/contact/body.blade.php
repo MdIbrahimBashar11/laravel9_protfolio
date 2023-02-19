@@ -118,13 +118,13 @@
                     <span class="d-block">call me</span>+8801713728112
                 </p>
                 <ul class="social list-unstyled pt-1 mb-5">
-                    <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    <li class="facebook"><a title="Facebook" href="https://www.facebook.com/profile.php?id=100043410734000"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    {{-- <li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a> --}}
                     </li>
-                    <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                    <li class="youtube"><a title="Youtube" href="https://www.youtube.com/@mdibrahimbashar"><i class="fa fa-youtube"></i></a>
                     </li>
-                    <li class="dribbble"><a title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                    <li class="dribbble"><a title="Dribbble" href="https://ibrahim1.netlify.app/"><i class="fa fa-dribbble"></i></a>
                     </li>
                 </ul>
             </div>
@@ -135,7 +135,7 @@
                 <div class="col-12 form-message">
                   
             </div>
-                <form class="contactform" method="POST" action="{{url('/message')}}">
+                <form class="contactform" method="POST" action="{{url('/messagesend')}}">
                     @csrf
                     <div class="contactform">
                         <div class="row">

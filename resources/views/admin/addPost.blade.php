@@ -25,7 +25,7 @@
             <nav>
               <h1><a href="./index.html">MD IBRAHIM</a></h1>
               <ul>
-                  <li><a href="{{ url('/dashboard') }}"><i class="fa fa-home"></i> Home</a></li>
+                  <li><a href="{{ url('/redirect') }}"><i class="fa fa-home"></i> Home</a></li>
                   <li><a href="{{ url('/myPost') }}"><i class="fa fa-folder-open"></i> My Post</a></li>
                   <li><a href="./message.html"><i class="fa fa-comments"></i> Message</a></li>
 
